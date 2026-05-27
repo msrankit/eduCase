@@ -51,7 +51,7 @@ export default function App() {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem(AUTH_USER_KEY);
+    localStorage.removeItem(import.meta.AUTH_USER_KEY);
     setAuth({ loggedIn: false, user: null });
   };
 
